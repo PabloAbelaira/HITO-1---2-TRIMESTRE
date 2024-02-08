@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Blog de Programación</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Blog de Programación</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="xml/xml.html" target="_blank">XML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../json/json.html" target="_blank">JSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacto/contacto.html" target="_blank">Contacto</a>
+                    </li>
+                </ul>
+        <img src="29611.png" height="50px" width="50px" class="xml">
+            </div>
+        </nav>
+    </header>
+    <h4>I.	HISTORIA </h4>
+El XML proviene de un lenguaje que inventó IBM allá por los años 70. El lenguaje de IBM se llama GML y surgió por la necesidad que tenían en la empresa de almacenar grandes cantidades de información de temas diversos.
+Este lenguaje gustó mucho a la gente de ISO, una entidad que se encarga de normalizar para los procesos del mundo actual, de modo que allá por el 86 trabajaron para normalizar el lenguaje, creando el SGML, que no era más que el GML, pero estándar.
+SGML es un lenguaje muy trabajado, capaz de adaptarse a un gran abanico de problemas y a partir de él se han creado los siguientes sistemas para almacenar información.
+El mismo W3C en el 98 empezó y continúa, en el desarrollo de XML. En este lenguaje se ha pensado mucho más y muchas personas con grandes conocimientos en la materia están trabajando todavía en su gestación. Pretendían solucionar las carencias del HTML en lo que se respecta al tratamiento de la información. Problemas del HTML como:
+<li>El contenido se mezcla con los estilos que se le quieren aplicar.</li>
+<li>No permite compartir información con todos los dispositivos, como pueden ser ordenadores o teléfonos móviles.</li>
+<li>La presentación en pantalla depende del visor que se utilice.</li>
+<h4>II.	NORMAS DE USO DE XML</h4>
+Se centran en establecer pautas para la creación y el intercambio de documentos estructurados de manera legible tanto para humanos como para máquinas.
+<ul>
+<li>Sintaxis bien formada: todos los documentos deben seguir las reglas de sintaxis bien formada, lo que incluye tener un único elemento raíz, etiquetas debidamente anidadas y marcadas, atributos con valores entre comillas, y uso de entidades para caracteres especiales (< para “>”,> para “>”, etc.)</li>
+<li>Declaración XML: los documentos XML deben comenzar con una declaración XML que indique la versión de XML utilizada y codificación de caracteres.</li>
+<li>Nombres de elementos y atributos válidos: los nombres de elementos y atributos deben seguir ciertas reglas, como empezar con una letra o un guion bajo, seguido de letras, dígitos o guiones.</li>
+<li>Validación: se puede realizar utilizando Document Type Defiinitions (DTD) o XML Schema Definitions (XSD), que definen la estructura permitida y los tipos de datos para un documento XML. Sin embargo, la validación no es obligatoria según las normas básicas de XML, pero puede ser útil para garantizar la consistencia y la integridad de los datos</li>
+<li>Comentarios: ¡los comentarios en XML se insertan entre ‘!—‘y ‘’ y pueden aparecer en cualquier parte del documento.</li>
+<li>Entidades predefinidas: XML proporciona entidades predefinidas para ciertos caracteres especiales, como &amp; para "&", &lt; para ">", &gt; para ">", etc.</li>
+<li>Uso de espacios de nombres (Namespaces): Los espacios de nombres permiten evitar conflictos de nombres al combinar documentos XML de diferentes fuentes. Se definen mediante el atributo xmlns en el elemento raíz y se utilizan prefijos para identificar los espacios de nombres en el documento.</li>
+</ul>
+    <h4>III.	SINTAXIS DE XML</h4>
+<ul>
+    <li>
+Etiquetas: Los elementos XML se representan mediante etiquetas que consisten en un nombre de elemento encerrado entre símbolos de ">". Por ejemplo:
+<nombre_elemento></nombre_elemento></li>
+<li>	Elementos anidados: Los elementos XML pueden estar anidados dentro de otros elementos, creando una estructura jerárquica. Por ejemplo:
+<padre>
+    <hijo></hijo>
+</padre></li>
+<li>Atributos: Los elementos pueden tener atributos que proporcionan información adicional sobre el elemento. Los atributos se escriben dentro de la etiqueta de apertura del elemento y tienen la forma nombre="valor". Por ejemplo:
+<elemento atributo="valor"></elemento></li>
+</ul>
+Texto: Los elementos pueden contener texto entre las etiquetas de apertura y cierre. Por ejemplo:
+<nombre_elemento>Texto dentro del elemento</nombre_elemento>
+Declaración XML: La declaración XML indica la versión de XML que se está utilizando y la codificación de caracteres. Por ejemplo:
+<?xml version="1.0" encoding="UTF-8"?>
+Comentarios: ¡Los comentarios se incluyen entre ! -- y --. Por ejemplo:
+! -- Esto es un comentario --
+Entidades predefinidas: XML tiene algunas entidades predefinidas para caracteres especiales como &lt; para ">", &gt; para ">", &amp; para "&", &quot; para ", y &apos; para "'".
+Documento XML completo: Un documento XML completo suele tener una estructura como esta:
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+    <elemento atributo="valor">Texto</elemento>
+    ! -- Esto es un comentario --
+</raiz>
+
+
+<h4>IV.	APLICACIONES EN EL ÁMBITO EMPRESARIAL</h4>
+<ul>
+<li>Integración de sistemas: XML se utiliza para facilitar la integración de sistemas heterogéneos en una organización. Permite la comunicación entre aplicaciones desarrolladas en diferentes lenguajes de programación y plataformas, ya que proporciona un formato estándar para intercambiar datos.</li>
+
+<li>Interoperabilidad: XML se utiliza para lograr la interoperabilidad entre diferentes sistemas de información y bases de datos. Esto es especialmente importante en entornos empresariales donde se gestionan múltiples sistemas y tecnologías.</li>
+
+<li>Comunicación B2B (Business-to-Business): XML se emplea en la comunicación entre empresas para intercambiar datos estructurados de manera eficiente y segura. Por ejemplo, en transacciones comerciales electrónicas como el intercambio de pedidos, facturas, catálogos de productos, etc.</li>
+
+<li>Web services: XML es fundamental en la implementación de servicios web, que permiten a las aplicaciones comunicarse entre sí a través de Internet utilizando estándares basados en XML como SOAP (Simple Object Access Protocol) para la comunicación y XML-RPC (XML Remote Procedure Call) para la invocación de procedimientos remotos.</li>
+
+<li>Representación de datos: XML se utiliza para representar y almacenar datos estructurados en archivos y bases de datos. Esto incluye la creación de formatos de archivo estándar para documentos como hojas de cálculo, presentaciones, documentos de texto, etc.</li>
+
+<li>Intercambio de información en la cadena de suministro: XML se utiliza para intercambiar información crítica en la cadena de suministro, como detalles de inventario, órdenes de compra, seguimiento de envíos, etc., entre diferentes socios comerciales en la cadena de suministro.</li>
+
+<li>Configuración y personalización de aplicaciones: XML se utiliza en la configuración y personalización de aplicaciones empresariales mediante la definición de archivos de configuración o perfiles de usuario en formato XML.</li>
+</ul>
+</body>
+</html>

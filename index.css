@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:darkgrey;
+}
+header {
+    margin-bottom: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: #333;
+}
+nav a:hover {
+    color: #007bff;
+}
+nav a.active {
+    font-weight: bold;
+}
+.columna-derecha {
+    padding-left: 0;
+}
+.articulo {
+    margin-bottom: 30px;
+}
+.articulo h2 {
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
+h4{
+    color: burlywood;
+}
+
+img{
+    float: right;
+}
